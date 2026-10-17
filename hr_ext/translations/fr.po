@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hr_ext 0.1.0\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Sure {name}, I've applied for your leave from {from_date} to {to_date}."
+msgstr "D'accord {name}, j'ai posé votre congé du {from_date} au {to_date}."
+
+msgid "Your available {leave_type} balance is {balance} days."
+msgstr "Votre solde de {leave_type} disponible est de {balance} jours."
+
+msgid "Your attendance for today is: {status}."
+msgstr "Votre présence aujourd'hui : {status}."
+
+msgid "Expense claim request received for {amount} ({currency}). Draft created as {name}."
+msgstr "Demande de note de frais reçue pour {amount} ({currency}). Brouillon créé sous le nom {name}."
+
+msgid "Your estimated take-home for a monthly gross of {gross} ({currency}) is {net} ({currency}) in {country}, assuming standard deductions."
+msgstr "Votre revenu net estimé pour un brut mensuel de {gross} ({currency}) est de {net} ({currency}) en {country}, déductions standard incluses."
+
+msgid "I can help with leave, attendance, expense claims and salary estimates. Try 'I need leave tomorrow'."
+msgstr "Je peux aider avec les congés, la présence, les notes de frais et les estimations de salaire. Essayez « I need leave tomorrow »."
+
+msgid "I couldn't find an employee record linked to your user. Please contact HR."
+msgstr "Je n'ai trouvé aucun dossier d'employé lié à votre compte. Merci de contacter les RH."
+
+msgid "I understood you, but I'm missing details. Could you clarify your request?"
+msgstr "J'ai compris, mais il me manque des détails. Pouvez-vous préciser votre demande ?"
+
+msgid "Attrition Risk Score"
+msgstr "Score de risque d'attrition"
+
+msgid "Risk Score (0..1)"
+msgstr "Score de risque (0..1)"
+
+msgid "Risk Level"
+msgstr "Niveau de risque"
+
+msgid "Nudge Log"
+msgstr "Journal des rappels"

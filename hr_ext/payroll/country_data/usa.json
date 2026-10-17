@@ -1,0 +1,30 @@
+{
+  "country": "usa",
+  "currency": "USD",
+  "tax_year": "Tax year 2025",
+  "regime": "federal single filer",
+  "source": "IRS Rev. Proc. 2024-40 (2025 brackets); 2025 standard deduction $15,750 single per IRS Pub. 17 (2025) after the One Big Beautiful Bill Act; SSA 2025 wage base $176,100 at 6.2%; Medicare 1.45% uncapped.",
+  "illustrative": true,
+  "notes": "Single filer, no dependents, credits or pre-tax retirement. Federal only: federal income tax plus FICA (Social Security 6.2% + Medicare 1.45%); no state or local income tax is modelled, nor 401(k)/HSA. Standard deduction is the 2025 single amount ($15,750). Illustrative until an accountant reviews it.",
+  "periods_per_year": 12,
+  "standard_exemption": 15750,
+  "taxable_exclusions": 0,
+  "health_cess": 0,
+  "social_security": {
+    "employee_rate": 0.062,
+    "employer_rate": 0.062,
+    "annual_cap": 176100,
+    "supplemental_rate": 0.0145
+  },
+  "slabs": [
+    {"up_to": 11925, "rate": 0.1},
+    {"up_to": 48475, "rate": 0.12},
+    {"up_to": 103350, "rate": 0.22},
+    {"up_to": 197300, "rate": 0.24},
+    {"up_to": 250525, "rate": 0.32},
+    {"up_to": 626350, "rate": 0.35},
+    {"up_to": null, "rate": 0.37}
+  ],
+  "exchange_rate": 83.0,
+  "exchange_rate_source": "sample (fixed USD->INR; replace with ERPNext Currency Exchange in production)"
+}

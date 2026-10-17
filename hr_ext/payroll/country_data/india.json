@@ -1,0 +1,54 @@
+{
+  "country": "india",
+  "currency": "INR",
+  "tax_year": "FY 2026-27 (Tax Year 2026-27; unchanged from FY 2025-26 / AY 2026-27)",
+  "regime": "new (section 202 of the Income-tax Act 2025; formerly section 115BAC of the 1961 Act)",
+  "source": "Income tax: Income Tax Department (incometaxindia.gov.in) AY 2026-27 rate table; Finance Act 2025 (slabs/SD/rebate) and Finance Act 2026 / Budget 2026, which made NO change to the new-regime slab rates, the Rs 75,000 standard deduction, or the section 87A rebate (Rs 60,000 up to Rs 12 L) -- and the Income-tax Act 2025 (Act 30 of 2025, in force from 1 Apr 2026) carries the same amounts over (section 202; rebate renumbered to section 156). ESI: ESIC (esic.gov.in), employee 0.75% / employer 3.25% on gross wages up to Rs 21,000/month (Rs 25,000 for persons with disability). Professional Tax: Maharashtra State Tax on Professions Act (employee-side monthly slab).",
+  "illustrative": true,
+  "notes": "Income-tax figures are the new regime for FY 2026-27 (Tax Year 2026-27), verified unchanged from FY 2025-26 (AY 2026-27): slabs Rs 4/8/12/16/20/24 L @ 5/10/15/20/25/30%, Rs 75,000 standard deduction, section 87A rebate Rs 60,000 up to Rs 12 L with marginal relief, 4% health & education cess. Budget 2026 left these unchanged, so the same numbers apply to both years; under the Income-tax Act 2025 (from 1 Apr 2026) they are renumbered (115BAC -> 202, 87A -> 156). EPF modelled at the statutory Rs 15,000/month wage ceiling (Rs 1,80,000/year) at 12% employee and employer, applied to gross because Basic+DA is not available here. Statutory deductions include ESI (0.75% employee / 3.25% employer on gross up to Rs 21,000/month; nil above) and Maharashtra Professional Tax (Rs 0 up to Rs 7,500, Rs 175/month up to Rs 10,000, Rs 200/month above, capped Rs 2,500/year). Professional Tax is state-specific: the Maharashtra slab is the default example; other states differ and stock Frappe HR only categorises PT (no slab computation). New regime assumed; old-regime deductions (80C, HRA, etc.) are not modelled. Illustrative until an accountant reviews it.",
+  "periods_per_year": 12,
+  "standard_exemption": 75000,
+  "taxable_exclusions": 0,
+  "health_cess": 0.04,
+  "social_security": {
+    "employee_rate": 0.12,
+    "employer_rate": 0.12,
+    "annual_cap": 180000,
+    "supplemental_rate": 0
+  },
+  "statutory_deductions": [
+    {
+      "name": "ESI",
+      "kind": "percent_of_wage",
+      "employee_rate": 0.0075,
+      "employer_rate": 0.0325,
+      "wage_ceiling_monthly": 21000
+    },
+    {
+      "name": "Professional Tax",
+      "kind": "monthly_slab",
+      "jurisdiction": "Maharashtra",
+      "annual_cap": 2500,
+      "slabs": [
+        {"up_to": 7500, "amount": 0},
+        {"up_to": 10000, "amount": 175},
+        {"up_to": null, "amount": 200}
+      ]
+    }
+  ],
+  "rebate": {
+    "threshold": 1200000,
+    "max_amount": 60000
+  },
+  "slabs": [
+    {"up_to": 400000, "rate": 0},
+    {"up_to": 800000, "rate": 0.05},
+    {"up_to": 1200000, "rate": 0.1},
+    {"up_to": 1600000, "rate": 0.15},
+    {"up_to": 2000000, "rate": 0.2},
+    {"up_to": 2400000, "rate": 0.25},
+    {"up_to": null, "rate": 0.3}
+  ],
+  "exchange_rate": 1.0,
+  "exchange_rate_source": "base currency (no conversion)"
+}

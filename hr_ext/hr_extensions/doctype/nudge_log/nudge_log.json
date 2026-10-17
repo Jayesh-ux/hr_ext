@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "NUDGE-.YYYY.-.#####",
+ "creation": "2026-10-13 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "recipient",
+  "employee",
+  "nudge_type",
+  "channel",
+  "subject",
+  "body",
+  "status",
+  "log_date",
+  "payload",
+  "error"
+ ],
+ "fields": [
+  {"fieldname": "recipient", "fieldtype": "Data", "in_list_view": 1, "label": "Recipient", "reqd": 1},
+  {"fieldname": "employee", "fieldtype": "Link", "in_list_view": 1, "label": "Employee", "options": "Employee"},
+  {"fieldname": "nudge_type", "fieldtype": "Data", "in_list_view": 1, "label": "Nudge Type"},
+  {"fieldname": "channel", "fieldtype": "Select", "in_list_view": 1, "label": "Channel", "options": "mock\nwhatsapp\nslack\nteams"},
+  {"fieldname": "subject", "fieldtype": "Small Text", "label": "Subject"},
+  {"fieldname": "body", "fieldtype": "Text", "label": "Body"},
+  {"fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "label": "Status", "options": "queued\nsent\nfailed"},
+  {"default": "Now", "fieldname": "log_date", "fieldtype": "Datetime", "in_list_view": 1, "label": "Logged At"},
+  {"fieldname": "payload", "fieldtype": "Code", "label": "Payload (JSON)"},
+  {"fieldname": "error", "fieldtype": "Small Text", "label": "Error"}
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-13 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Extensions",
+ "name": "Nudge Log",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1},
+  {"email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "HR Manager"},
+  {"create": 1, "read": 1, "role": "Employee"}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

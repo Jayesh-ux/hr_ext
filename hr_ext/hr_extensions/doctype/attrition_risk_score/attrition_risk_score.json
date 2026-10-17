@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "field:employee",
+ "creation": "2026-10-13 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+  "field_order": [
+   "employee",
+   "employee_name",
+   "scored_on",
+   "score",
+   "risk_level",
+   "contributions",
+   "snapshot",
+   "remarks"
+  ],
+  "fields": [
+   {"fieldname": "employee", "fieldtype": "Link", "in_list_view": 1, "label": "Employee", "options": "Employee", "reqd": 1, "unique": 1},
+   {"fieldname": "employee_name", "fieldtype": "Data", "fetch_from": "employee.employee_name", "in_list_view": 1, "label": "Employee Name", "read_only": 1},
+  {"default": "Today", "fieldname": "scored_on", "fieldtype": "Date", "in_list_view": 1, "label": "Scored On", "reqd": 1},
+  {"fieldname": "score", "fieldtype": "Float", "in_list_view": 1, "label": "Risk Score (0..1)", "precision": "4"},
+  {"fieldname": "risk_level", "fieldtype": "Select", "in_list_view": 1, "label": "Risk Level", "options": "low\nmedium\nhigh"},
+  {"fieldname": "contributions", "fieldtype": "Code", "label": "Factor Contributions (JSON)"},
+  {"fieldname": "snapshot", "fieldtype": "Code", "label": "Feature Snapshot (JSON)"},
+  {"fieldname": "remarks", "fieldtype": "Small Text", "label": "Remarks"}
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-13 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Extensions",
+ "name": "Attrition Risk Score",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1},
+  {"email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "HR Manager"}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {"color": "Red", "docstatus": 0, "title": "High", "value": "high"},
+  {"color": "Orange", "docstatus": 0, "title": "Medium", "value": "medium"},
+  {"color": "Green", "docstatus": 0, "title": "Low", "value": "low"}
+ ]
+}

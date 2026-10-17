@@ -1,0 +1,25 @@
+{
+  "country": "uae",
+  "currency": "AED",
+  "tax_year": "2025 (calendar year)",
+  "regime": "no personal income tax",
+  "source": "UAE Federal Decree-Law No. 47 of 2022 (no personal income tax); GPSSA pension law for UAE/GCC nationals.",
+  "illustrative": true,
+  "notes": "The UAE levies no personal income tax. The 5% employee / 12.5% employer social security models the GPSSA pension, which applies to UAE/GCC nationals only (declared via social_security.applies_to='gcc_national'); expatriates, the majority of the workforce, make no contribution. The engine withholds nothing unless the caller confirms a GCC national. Illustrative until an accountant reviews it.",
+  "periods_per_year": 12,
+  "standard_exemption": 0,
+  "taxable_exclusions": 0,
+  "health_cess": 0,
+  "social_security": {
+    "employee_rate": 0.05,
+    "employer_rate": 0.125,
+    "annual_cap": 0,
+    "supplemental_rate": 0,
+    "applies_to": "gcc_national"
+  },
+  "slabs": [
+    {"up_to": null, "rate": 0}
+  ],
+  "exchange_rate": 23.0,
+  "exchange_rate_source": "sample (fixed AED->INR; replace with ERPNext Currency Exchange in production)"
+}

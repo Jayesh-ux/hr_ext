@@ -1,0 +1,21 @@
+{
+ "add_segment": 0,
+ "creation": "2026-10-13 00:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-10-13 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Extensions",
+ "name": "attrition_dashboard",
+ "owner": "Administrator",
+ "page_name": "attrition_dashboard",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "HR Manager"}
+ ],
+ "script": null,
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Attrition Dashboard"
+}

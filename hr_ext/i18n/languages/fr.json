@@ -1,0 +1,10 @@
+{
+  "Sure {name}, I've applied for your leave from {from_date} to {to_date}.": "D'accord {name}, j'ai posé votre congé du {from_date} au {to_date}.",
+  "Your available {leave_type} balance is {balance} days.": "Votre solde de {leave_type} disponible est de {balance} jours.",
+  "Your attendance for today is: {status}.": "Votre présence aujourd'hui : {status}.",
+  "Expense claim request received for {amount} ({currency}). Draft created as {name}.": "Demande de note de frais reçue pour {amount} ({currency}). Brouillon créé sous le nom {name}.",
+  "Your estimated take-home for a monthly gross of {gross} ({currency}) is {net} ({currency}) in {country}, assuming standard deductions.": "Votre revenu net estimé pour un brut mensuel de {gross} ({currency}) est de {net} ({currency}) en {country}, déductions standard incluses.",
+  "I can help with leave, attendance, expense claims and salary estimates. Try 'I need leave tomorrow'.": "Je peux aider avec les congés, la présence, les notes de frais et les estimations de salaire. Essayez « I need leave tomorrow ».",
+  "I couldn't find an employee record linked to your user. Please contact HR.": "Je n'ai trouvé aucun dossier d'employé lié à votre compte. Merci de contacter les RH.",
+  "I understood you, but I'm missing details. Could you clarify your request?": "J'ai compris, mais il me manque des détails. Pouvez-vous préciser votre demande ?"
+}

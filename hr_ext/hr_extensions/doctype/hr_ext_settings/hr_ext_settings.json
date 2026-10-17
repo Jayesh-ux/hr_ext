@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-10-13 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "conversational_section",
+  "llm_enabled",
+  "llm_endpoint",
+  "llm_api_key",
+  "llm_model",
+  "channels_section",
+  "mock_enabled",
+  "whatsapp_token",
+  "whatsapp_phone_number_id",
+  "whatsapp_base_url",
+  "slack_bot_token",
+  "slack_default_channel",
+  "teams_webhook_url",
+  "payroll_section",
+  "default_country",
+  "nudges_section",
+  "nudge_hr_user",
+  "nudge_attendance_gap_days",
+  "nudge_leave_approval_days",
+  "nudge_expense_approval_days",
+  "nudge_probation_days",
+  "attrition_lookback_days",
+  "story_section",
+  "story_mode_enabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "conversational_section",
+   "fieldtype": "Section Break",
+   "label": "Conversational AI"
+  },
+  {
+   "fieldname": "llm_enabled",
+   "fieldtype": "Check",
+   "label": "Enable LLM intent classification"
+  },
+  {
+   "fieldname": "llm_endpoint",
+   "fieldtype": "Data",
+   "label": "LLM API endpoint"
+  },
+  {
+   "fieldname": "llm_api_key",
+   "fieldtype": "Password",
+   "label": "LLM API key"
+  },
+  {
+   "fieldname": "llm_model",
+   "fieldtype": "Data",
+   "label": "LLM model name"
+  },
+  {
+   "fieldname": "channels_section",
+   "fieldtype": "Section Break",
+   "label": "Channels"
+  },
+  {
+   "fieldname": "mock_enabled",
+   "fieldtype": "Check",
+   "default": "1",
+   "label": "Force mock channel (no network)"
+  },
+  {
+   "fieldname": "whatsapp_token",
+   "fieldtype": "Password",
+   "label": "WhatsApp token (HR_EXT_WHATSAPP_TOKEN)"
+  },
+  {
+   "fieldname": "whatsapp_phone_number_id",
+   "fieldtype": "Data",
+   "label": "WhatsApp phone-number-id"
+  },
+  {
+   "fieldname": "whatsapp_base_url",
+   "fieldtype": "Data",
+   "label": "WhatsApp Graph base URL"
+  },
+  {
+   "fieldname": "slack_bot_token",
+   "fieldtype": "Password",
+   "label": "Slack bot token (HR_EXT_SLACK_BOT_TOKEN)"
+  },
+  {
+   "fieldname": "slack_default_channel",
+   "fieldtype": "Data",
+   "label": "Slack default channel"
+  },
+  {
+   "fieldname": "teams_webhook_url",
+   "fieldtype": "Data",
+   "label": "Teams webhook URL"
+  },
+  {
+   "fieldname": "payroll_section",
+   "fieldtype": "Section Break",
+   "label": "Payroll"
+  },
+  {
+   "fieldname": "default_country",
+   "fieldtype": "Data",
+   "default": "india",
+   "label": "Default payroll country"
+  },
+  {
+   "fieldname": "nudges_section",
+   "fieldtype": "Section Break",
+   "label": "Nudges"
+  },
+  {
+   "fieldname": "nudge_hr_user",
+   "fieldtype": "Link",
+   "label": "HR user for nudge routing",
+   "options": "User"
+  },
+  {
+   "fieldname": "nudge_attendance_gap_days",
+   "fieldtype": "Int",
+   "default": 3,
+   "label": "Attendance gap threshold (days)"
+  },
+  {
+   "fieldname": "nudge_leave_approval_days",
+   "fieldtype": "Int",
+   "default": 2,
+   "label": "Leave approval threshold (days)"
+  },
+  {
+   "fieldname": "nudge_expense_approval_days",
+   "fieldtype": "Int",
+   "default": 3,
+   "label": "Expense approval threshold (days)"
+  },
+  {
+   "fieldname": "nudge_probation_days",
+   "fieldtype": "Int",
+   "default": 30,
+   "label": "Probation notice window (days)"
+  },
+  {
+   "fieldname": "attrition_lookback_days",
+   "fieldtype": "Int",
+   "default": 180,
+   "label": "Attrition feature lookback (days)"
+  },
+  {
+   "fieldname": "story_section",
+   "fieldtype": "Section Break",
+   "label": "Story Mode"
+  },
+  {
+   "fieldname": "story_mode_enabled",
+   "fieldtype": "Check",
+   "label": "Enable Story Mode",
+   "default": "0",
+   "description": "Demo/test-only: enable the Story Mode test harness and persona cast builder."
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-10-13 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "HR Extensions",
+ "name": "HR Ext Settings",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "issingle": 1
+}

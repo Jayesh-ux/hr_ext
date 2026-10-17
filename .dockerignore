@@ -1,0 +1,14 @@
+# Keep build context small and, above all, keep secrets and dev artifacts out
+# of the image. The Administrator password lives outside the app (see
+# docker/README-docker.md) and is never copied here.
+**/.git
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/node_modules
+**/*.log
+**/.env
+**/.admin_password
+**/sites
+Dockerfile
+docker-compose*.yml

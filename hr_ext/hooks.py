@@ -10,6 +10,29 @@ app_license = "mit"
 
 # required_apps = []
 
+# Fixtures
+# ------------------
+# Shipped Custom Fields (imported on install and every migrate via sync_fixtures).
+# The Nationality field lets payroll decide nationality-restricted social
+# security (e.g. UAE GPSSA covers GCC nationals only); stock Employee has no
+# nationality column.
+fixtures = [
+	{
+		"dt": "Custom Field",
+		"filters": [
+			["dt", "=", "Employee"],
+			["fieldname", "=", "hr_ext_nationality"],
+		],
+	},
+	{
+		"dt": "Custom Field",
+		"filters": [
+			["dt", "=", "Employee"],
+			["fieldname", "=", "hr_ext_payroll_country"],
+		],
+	},
+]
+
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -143,34 +166,26 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Leave Application": {
+		"after_insert": "hr_ext.nudges.triggers.on_leave_application_filed",
+	},
+	"Expense Claim": {
+		"after_insert": "hr_ext.nudges.triggers.on_expense_claim_filed",
+	},
+	"Salary Slip": {
+		"on_submit": "hr_ext.payroll.hooks.on_salary_slip_submit",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"hr_ext.tasks.all"
-# 	],
-# 	"daily": [
-# 		"hr_ext.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"hr_ext.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"hr_ext.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"hr_ext.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"daily": [
+		"hr_ext.tasks.daily_maintenance"
+	],
+}
 
 # Testing
 # -------

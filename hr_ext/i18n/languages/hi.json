@@ -1,0 +1,10 @@
+{
+  "Sure {name}, I've applied for your leave from {from_date} to {to_date}.": "ठीक है {name}, मैंने आपकी छुट्टी {from_date} से {to_date} तक के लिए लागू कर दी है।",
+  "Your available {leave_type} balance is {balance} days.": "आपकी उपलब्ध {leave_type} छुट्टी का बैलेंस {balance} दिन है।",
+  "Your attendance for today is: {status}.": "आज के लिए आपकी उपस्थिति: {status}।",
+  "Expense claim request received for {amount} ({currency}). Draft created as {name}.": "व्यय दावा आवेदन {amount} ({currency}) के लिए प्राप्त हुआ। ड्राफ्ट {name} के रूप में बनाया गया।",
+  "Your estimated take-home for a monthly gross of {gross} ({currency}) is {net} ({currency}) in {country}, assuming standard deductions.": "आपकी अनुमानित शुद्ध आय मासिक ग्रॉस {gross} ({currency}) पर {net} ({currency}) है ({country} में), मानक कटौती मानते हुए।",
+  "I can help with leave, attendance, expense claims and salary estimates. Try 'I need leave tomorrow'.": "मैं छुट्टी, उपस्थिति, व्यय दावों और वेतन अनुमानों में मदद कर सकता हूँ। 'I need leave tomorrow' आज़माएँ।",
+  "I couldn't find an employee record linked to your user. Please contact HR.": "आपके उपयोगकर्ता से जुड़ा कोई कर्मचारी रिकॉर्ड नहीं मिला। कृपया HR से संपर्क करें।",
+  "I understood you, but I'm missing details. Could you clarify your request?": "मैं समझ गया, लेकिन कुछ विवरण गायब हैं। क्या आप अपना अनुरोध स्पष्ट कर सकते हैं?"
+}
